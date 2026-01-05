@@ -6,7 +6,6 @@
 setwd('D:/Documentos/Dados R')
 getwd()
 
-
 # Carrega o dataset
 dataset = read.table('Exam_Score_Prediction.csv', header = TRUE, sep = ',')
 
