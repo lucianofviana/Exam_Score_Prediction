@@ -3,8 +3,6 @@
 #Dataset https://www.kaggle.com/datasets/kundanbedmutha/exam-score-prediction-dataset
 
 
-
-
 # Define o diretório
 setwd('D:/Documentos/Dados R')
 getwd()
@@ -26,8 +24,6 @@ df = read.table('Exam_Score_Prediction.csv', header = TRUE, sep = ',')
 str(df)
 
 head(df)
-
-
 
 
 #### Pré Processamento ####
@@ -57,8 +53,11 @@ head(df)
 mean(df$idade)
 summary(df$idade)
 
-ggplot(df, aes(x =df$idade.Length , y =df$idade )) +
+ggplot(df, aes(x =df$idade.Length , y =df$idade)) +
   geom_boxplot()
 
-ggplot(df, aes(x =df$horas_de_estudo.Length , y =df$horas_de_estudo )) +
+ggplot(df, aes(x =df$horas_de_estudo.Length , y =df$horas_de_estudo)) +
+  geom_boxplot()
+
+ggplot(df, aes(x =df$horas_de_sono.Length , y =df$horas_de_sono)) +
   geom_boxplot()
