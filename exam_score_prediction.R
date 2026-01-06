@@ -50,14 +50,23 @@ df <- df %>%
 
 head(df)
 
-mean(df$idade)
+
+# Entendendo a distribuição de idades dos alunos na pesquisa
 summary(df$idade)
 
 ggplot(df, aes(x =df$idade.Length , y =df$idade)) +
   geom_boxplot()
 
+
+
+# Entendendo a distribuição de horas de estudo dos alunos na pesquisa
+summary(df$horas_de_estudo)
+
 ggplot(df, aes(x =df$horas_de_estudo.Length , y =df$horas_de_estudo)) +
   geom_boxplot()
+
+
+# Entendendo a distribuição de horas de sono dos alunos na pesquisa
 
 ggplot(df, aes(x =df$horas_de_sono.Length , y =df$horas_de_sono)) +
   geom_boxplot()
